@@ -1,0 +1,50 @@
+.new-application{
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  margin-right: 30px;
+  flex-grow: 1;
+  padding:10px;
+  background-color: #d0d0d0;
+}
+
+.application-card {
+  background-color: #f3f3f3;
+  padding:10px;
+  cursor: pointer;
+  border-style:none;
+  border-width: thin;
+  // height:200px;
+  #info-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    p {
+
+      padding:0 20px 0 20px;
+    }
+  }
+  margin-bottom: 10px;
+
+  #application-code{
+    border-style: solid;
+    border-radius: 50%;
+    border-width: thin;
+    padding: 0 -5 0 -5;
+  }
+}
+
+.risk {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.risk-bar {
+
+  width:50px;
+  height:40px;
+  background-color: #AB9BA9;
+  margin-right: 2px;
+}

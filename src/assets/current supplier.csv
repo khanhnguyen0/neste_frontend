@@ -1,0 +1,12 @@
+code;supplier_name;feedstock_type;company_name;country;province;contract_date;certification_no;certification_name;capacity (t/h);volume (mt);no_estate;sustainability_commitment;traceability_logistics;stakeholder_engagement;social_resp;environment;GHG;expired certification no;rank;quality rate;Traceability;on-time delivery;updated document;current GHG
+CPO.01;Kekayaan;crude palm oil;Kuala Kumpur Kepong Berhad;malaysia;johor;1.1.2015;2;ISCC,RSPO;120;97628;10;10;10;10;10;10;green;0;1;10;9;10;10;green
+CPO.02;Gunung Melayu II;crude palm oil;PT Saudara Sejati Luhur;indonesia;asahan;1.5.2016;2;ISCC,RSPO;60;53724;4;9;8;9;10;7;yellow;1;4;10;9;10;8;yellow
+CPO.03;Sungai Merah;crude palm oil;PT Sumber Indah Perkasa;indonesia;lampung;1.1.2016;2;ISCC,RSPO;30;29238;3;8;8;8;9;8;green;2;5;9;9;10;7;green
+PWR.01;Maju Aneka Sawit;palm waste residues;PPB Oil Palms Berhad;indonesia;central kalimantan;1.1.2015;2;ISCC,RSPO;45;60384;4;9;9;9;9;8;green;0;2;9;9;10;7;green
+PWR.02;Sapi;palm waste residues;PPB Oil Palms Berhad;malaysia;sabah;1.1.2015;2;ISCC,RSPO;60;35090;2;7;8;8;9;8;yellow;2;6;9;9;10;9;yellow
+UCO.01;RanI;used cooking oil;Ran;malaysia;johor;1.1.2017;2;ISCC,RSPO;30;38599;2;8;8;8;8;8;light green;3;7;8;9;10;8;light green
+UCO.02;Mekong;used cooking oil;Dom;vietnam;can tho;2.1.2017;2;ISCC,RSPO;30;42459;3;7;7;7;7;9;green;3;8;8;8;10;8;green
+AF.01;Dom II;animal fat;Dom;indonesia;lampung;3.1.2017;2;ISCC,RSPO;60;46705;4;7;8;9;10;7;yellow;2;10;7;8;10;6;yellow
+AF.02;RanII;animal fat;Ran;thailand;na;4.1.2017;2;ISCC,RSPO;60;51375;3;8;8;9;9;5;red;4;11;6;8;10;5;red
+AF.03;Dom I;animal fat;Dom;thailand;na;5.1.2017;2;ISCC,RSPO;30;56513;2;9;9;9;9;9;green;3;3;10;8;10;9;green
+UCO.15;bizzard;used cooking oil;greenfield;vietnam;danang;6.1.2017;2;ISCC,RSPO;30;56513;2;8;8;8;8;8;yellow;3;9;9;8;10;9;yellow

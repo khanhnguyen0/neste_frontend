@@ -1,0 +1,13 @@
+@import 'nav-bar';
+@import 'application';
+@import 'container';
+@import 'audit-application';
+@import 'approved-application';
+
+#root{
+  display: flex;
+}
+
+body {
+  background-color: #f3f3f3;
+}
