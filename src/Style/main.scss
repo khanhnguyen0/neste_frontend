@@ -1,8 +1,9 @@
 @import 'nav-bar';
 @import 'application';
-@import 'container';
+@import 'application-page';
 @import 'audit-application';
 @import 'approved-application';
+@import 'supplier-performance';
 
 #root{
   display: flex;

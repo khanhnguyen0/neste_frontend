@@ -14,7 +14,10 @@ class NewApplication extends Component {
     const {data} = this.props;
     return (
       <div className = "new-application">
-        <p>New application</p>
+        <div className = "menu">
+        <p>New application </p>
+        <i className="fa fa-filter" aria-hidden="true"></i>
+        </div>
         {data.map((a,k)=>{
           return <NewApplicationCard {...a} key = {k} />
         })}

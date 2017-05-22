@@ -5,7 +5,7 @@ import ApprovedApplication from './approved-application'
 import applicationData from '../assets/application.json';
 import axios from 'axios';
 
-class Container extends Component {
+class ApplicationPage extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -33,7 +33,7 @@ class Container extends Component {
 
 
     return (
-      <div className = "container">
+      <div className = "application-page">
         <NewApplication data = {newApplication}/>
         <Audit data = {auditingApplication}/>
         <ApprovedApplication data = {approvedApplication}/>
@@ -42,4 +42,4 @@ class Container extends Component {
   }
 }
 
-export default Container;
+export default ApplicationPage;

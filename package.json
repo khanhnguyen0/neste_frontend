@@ -35,6 +35,9 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "express": "^4.15.3"
+    "chart": "^0.1.2",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "zingchart-react": "^1.0.5"
   }
 }

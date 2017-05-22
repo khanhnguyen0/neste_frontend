@@ -13,10 +13,10 @@ const NewApplicationCard = (props)=>{
         </div>
         <div>
 
-          <p>{cert_no}</p>
+          <p><i className="fa fa-file-text-o" aria-hidden="true"></i> {cert_no}</p>
         </div>
         <div>
-          <p>{doc_fulfilled}</p>
+          <p><i className="fa fa-paperclip" aria-hidden="true"></i> {doc_fulfilled}</p>
 
         </div>
       </div>

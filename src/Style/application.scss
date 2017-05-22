@@ -7,6 +7,8 @@
   flex-grow: 1;
   padding:10px;
   background-color: #d0d0d0;
+  max-height: 600px;
+  overflow: scroll;
 }
 
 .application-card {
@@ -48,3 +50,8 @@
   background-color: #AB9BA9;
   margin-right: 2px;
 }
+
+// .menu{
+//   display: flex;
+//   flex-direction: column;
+// }
