@@ -1,69 +1,56 @@
 import React from 'react';
-var ZingChart = require('zingchart-react').core
+import Radar from 'react-d3-radar';
 import _ from 'lodash';
+import SupplierList from './supplier-list';
 
-let myConfig = {
-  type : 'radar',
-  plot : {
-    aspect : 'area',
-    animation: {
-      effect:3,
-      sequence:1,
-      speed:700
-    }
-  },
-  scaleV : {
-    visible : false
-  },
-  scaleK : {
-    values : '0:4:1',
-    labels : ['SUP','BIO','SEC','SUS', 'FIN'],
-    item : {
-      fontColor : '#607D8B',
-      backgroundColor : "white",
-      borderColor : "#aeaeae",
-      borderWidth : 1,
-      padding : '5 10',
-      borderRadius : 10
-    },
-    refLine : {
-      lineColor : '#c10000'
-    },
-    tick : {
-      lineColor : '#59869c',
-      lineWidth : 2,
-      lineStyle : 'dotted',
-      size : 20
-    },
-    guide : {
-      lineColor : "#607D8B",
-      lineStyle : 'solid',
-      alpha : 0.3,
-      backgroundColor : "#c5c5c5 #718eb4"
-    }
-  },
-  series : [
-    {
-      values : [20, 20, 54, 41, 41],
-      lineColor : '#53a534',
-      backgroundColor : '#689F38'
-    }
-  ]
-};
+const radarConfig = {
+  width:300,
+  height:300,
+  padding:70,
+  domainMax:100,
+  highlighted:null
+}
 
 const CurrentRating = (props)=>{
-  const {data} = props;
+  const {data, selectSupplier} = props;
   const sup_rating = Math.floor(_.sumBy(data,'sup_rating')/data.length);
   const fin_rating = Math.floor(_.sumBy(data,'fin_rating')/data.length);
   const bio_rating = Math.floor(_.sumBy(data,'bio_rating')/data.length);
   const sus_rating = Math.floor(_.sumBy(data,'sus_rating')/data.length);
   const sec_rating = Math.floor(_.sumBy(data,'sec_rating')/data.length);
-  myConfig.series.values = [sup_rating,bio_rating,sec_rating,sus_rating,fin_rating];
+
+  const ratingData = {
+   variables: [
+     {key: 'sustainability', label: 'SUS'},
+     {key: 'finance', label: 'FIN'},
+     {key: 'security', label: 'SEC'},
+     {key: 'supplychain', label: 'SUP'},
+     {key: 'bio-compliance', label: 'BIO'},
+   ],
+   sets: [
+     {
+       key: 'me',
+       label: 'Current rating',
+       values: {
+         sustainability: sus_rating,
+         finance: fin_rating,
+         security: sec_rating,
+         supplychain: sup_rating,
+         "bio-compliance": bio_rating
+       },
+     }
+   ],
+ }
+
+
 
   return(
     <div className = "current-rating">
-      <ZingChart id="myChart" height="300" width="600" data={myConfig} />
-    </div>
+      <SupplierList list = {data} selectSupplier = {selectSupplier}/>
+      <div className = "radar">
+        <Radar {...radarConfig} data={ratingData} />
+      </div>
+      </div>
   )
 }
 

@@ -36,9 +36,11 @@
   "dependencies": {
     "axios": "^0.16.1",
     "chart": "^0.1.2",
+    "d3": "^4.9.1",
     "express": "^4.15.3",
     "lodash": "^4.17.4",
     "radar-chart-d3": "^1.2.0",
+    "react-d3-radar": "^0.2.6",
     "zingchart-react": "^1.0.5"
   }
 }

@@ -1,15 +1,11 @@
 import React from 'react';
 import PerformanceBar from './performance-bar';
+import PerformanceMap from './performance-map';
 import _ from 'lodash';
 
-const theme = {
-  r:93,
-  g:141,
-  b:152
-};
 
 const CurrentPerformance = (props) =>{
-  const {data} = props;
+  const {data,theme} = props;
 
   let updated_document = _.sumBy(data,'updated_document')/data.length
   let ontime_delivery = _.sumBy(data,'ontime_delivery')/data.length
@@ -19,7 +15,10 @@ const CurrentPerformance = (props) =>{
   let GHG = _.sumBy(data,d => parseInt(d.GHG))/data.length;
   console.log(data);
   return (
+    <div className = "performance-container">
+      <PerformanceMap />
     <div className = "current-performance">
+        <h3>Current performance</h3>
         <div className = "performance-row">
           <p>Documents fulfilled</p>
           <PerformanceBar value = {updated_document/10} theme = {theme}/>
@@ -50,6 +49,7 @@ const CurrentPerformance = (props) =>{
           <PerformanceBar value = {traceability_logistics/10} theme = {theme}/>
         </div>
 
+    </div>
     </div>
   )
 }
