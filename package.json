@@ -38,6 +38,7 @@
     "chart": "^0.1.2",
     "express": "^4.15.3",
     "lodash": "^4.17.4",
+    "radar-chart-d3": "^1.2.0",
     "zingchart-react": "^1.0.5"
   }
 }

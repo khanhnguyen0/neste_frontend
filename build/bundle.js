@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "20ac3e9e598c848dd6d5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "72ff3a43e82455098a70"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -33755,7 +33755,7 @@ var PerformanceBar = function PerformanceBar(props) {
   var value = props.value,
       theme = props.theme;
 
-  var width = value * 600;
+  var width = value * 400;
   var r = theme.r,
       g = theme.g,
       b = theme.b;
