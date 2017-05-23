@@ -4,9 +4,9 @@ import _ from 'lodash';
 import SupplierList from './supplier-list';
 
 const radarConfig = {
-  width:300,
-  height:300,
-  padding:70,
+  width:200,
+  height:200,
+  padding:0,
   domainMax:100,
   highlighted:null
 }
@@ -48,6 +48,7 @@ const CurrentRating = (props)=>{
     <div className = "current-rating">
       <SupplierList list = {data} selectSupplier = {selectSupplier}/>
       <div className = "radar">
+        <h3>Rating summary</h3>
         <Radar {...radarConfig} data={ratingData} />
       </div>
       </div>

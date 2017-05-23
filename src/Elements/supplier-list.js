@@ -7,9 +7,12 @@ const SupplierList = (props) =>{
   const orderedList = _.sortBy(list,'expired_certification_no').reverse();
 
   return (
+    <div>
+      <h3>Supplier List</h3>
     <div className = "supplier-list">
       {orderedList.map((s,k)=><SupplierRow {...s} key = {k} selectSupplier = {selectSupplier}/>)}
     </div>
+  </div>
   )
 }
 

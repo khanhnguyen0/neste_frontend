@@ -1,6 +1,4 @@
 .supplier-interface {
-
-
 }
 
 .performance-container{
@@ -67,10 +65,16 @@
 .current-rating{
   display:flex;
   flex-direction: row;
+  h3 {
+    text-align: center;
+    margin-top:50px;
+  }
+  div {
+    margin-right:30px;
+  }
 }
 
 .supplier-list {
-  margin:70px;
   max-height: 150px;
   overflow: scroll;
 }

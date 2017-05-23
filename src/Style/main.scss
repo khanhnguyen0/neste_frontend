@@ -4,19 +4,27 @@
 @import 'audit-application';
 @import 'approved-application';
 @import 'supplier-performance';
+@font-face {
+  font-family: 'myfontfamily';
+  src: url(../assets/TT0857M_.TTF) format('truetype');
+    /* Add other formats as you see fit */
+}
 
 #root{
   display: flex;
 }
 
 html,body {
-  background-color: #f3f3f3;
   margin:0px;
   display: flex;
   flex-direction: column;
+  font-family: 'myfontfamily';
 }
 
 [data-reactroot] {
   width:100% !important;
   height:100% !important;
+  background-image: url(../assets/background-04.png);
+  background-size: cover;
+  background-position: center;
 }

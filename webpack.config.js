@@ -30,9 +30,13 @@ module.exports = {
                     }
                 ]
             }, {
-                test: /\.png$/,
+                test: /\.(png)$/,
                 loaders: ['file-loader']
-            }
+            },
+            {
+               test: /\.TTF$/,
+               loaders: ['file-loader']
+           }
         ]
     },
     plugins: [new webpack.HotModuleReplacementPlugin()],
