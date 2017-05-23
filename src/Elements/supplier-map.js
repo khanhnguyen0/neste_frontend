@@ -8,7 +8,7 @@ const containerStyle = {
 
 const SupplierMap = (props) =>{
   const {list} = props;
-  const zoom = list.length>1?1:6;
+  const zoom = list.length>1?2:6;
   const center = list.length>1?null:list[0].position;
   if (!list) return null;
   return (

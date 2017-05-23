@@ -60,6 +60,8 @@
 .performance-bar{
   padding: 10px 0 10px 0;
   background-clip: content-box;
+  transition: 0.5s ease;
+
 }
 
 .current-rating{
