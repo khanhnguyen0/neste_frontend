@@ -1,6 +1,6 @@
 import React from 'react';
 import PerformanceBar from './performance-bar';
-import PerformanceMap from './performance-map';
+import SupplierMap from './supplier-map';
 import _ from 'lodash';
 
 
@@ -16,7 +16,7 @@ const CurrentPerformance = (props) =>{
   console.log(data);
   return (
     <div className = "performance-container">
-      <PerformanceMap />
+      <SupplierMap list = {data} />
     <div className = "current-performance">
         <h3>Current performance</h3>
         <div className = "performance-row">
