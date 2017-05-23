@@ -9,6 +9,14 @@
   display: flex;
 }
 
-body {
+html,body {
   background-color: #f3f3f3;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-reactroot] {
+  width:100% !important;
+  height:100% !important;
 }
