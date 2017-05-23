@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4e90862f0d1d029f24f7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3393c50239a46b7a4fae"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -39677,14 +39677,17 @@ var containerStyle = {
 var SupplierMap = function SupplierMap(props) {
   var list = props.list;
 
+  var zoom = list.length > 1 ? 1 : 6;
+  var center = list.length > 1 ? null : list[0].position;
+  if (!list) return null;
   return _react2.default.createElement(
     'div',
     { className: 'supplier-map' },
     _react2.default.createElement(
       _googleMapsReact2.default,
-      { google: window.google, containerStyle: containerStyle, zoom: 2 },
+      { google: window.google, containerStyle: containerStyle, zoom: zoom, center: center },
       list.length > 0 ? list.map(function (s, k) {
-        return _react2.default.createElement(_googleMapsReact.Marker, { title: s.supplier_name, key: k, position: s.position });
+        return _react2.default.createElement(_googleMapsReact.Marker, { name: s.supplier_name, title: s.supplier_name, key: k, position: s.position });
       }) : null
     )
   );
