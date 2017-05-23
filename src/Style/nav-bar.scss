@@ -74,6 +74,13 @@
   justify-content: space-around;
   .menubar-item{
     flex: 1;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .active{
+    background-color: #013459;
+    color:white;
+    transition: 0.5s ease-in-out;
   }
   h3{
     text-align: center;

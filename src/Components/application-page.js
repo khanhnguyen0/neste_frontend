@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Audit from './audit';
 import NewApplication from './new-application'
 import ApprovedApplication from './approved-application'
-import applicationData from '../assets/application.json';
+import ColorBar from '../Elements/color-bar';
 import axios from 'axios';
 
 class ApplicationPage extends Component {
@@ -33,11 +33,14 @@ class ApplicationPage extends Component {
 
 
     return (
-      <div className = "application-page">
+      <div className = "application">
+        <ColorBar />
+        <div className = "application-page">
         <NewApplication data = {newApplication}/>
         <Audit data = {auditingApplication}/>
         <ApprovedApplication data = {approvedApplication}/>
       </div>
+    </div>
     )
   }
 }

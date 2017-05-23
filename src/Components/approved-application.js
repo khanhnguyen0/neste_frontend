@@ -13,12 +13,17 @@ class NewApplication extends Component {
   render(){
     const {data} = this.props;
     return (
+      <div style = {{flex:1}}>
+        <div className = "menu">
+          <p>Send to next level </p>
+          <i className="fa fa-filter" aria-hidden="true"></i>
+        </div>
       <div className = "approved-application">
-        <p>Send to next level</p>
         {data.map((a,k)=>{
           return <ApprovedApplicationCard {...a} key = {k} />
         })}
       </div>
+    </div>
     )
   }
 }

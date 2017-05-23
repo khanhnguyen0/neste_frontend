@@ -2,8 +2,9 @@ import React from 'react'
 import Map,{Marker} from 'google-maps-react'
 
 const containerStyle = {
-  width:"50%",
-  height:"50%"
+  width:"40%",
+  height:"40%",
+  "margin-left":"30px"
 }
 
 const SupplierMap = (props) =>{

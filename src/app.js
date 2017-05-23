@@ -23,7 +23,7 @@ class App extends Component{
     return (
       <div>
         <NavBar />
-        <MenuBar changeInterface = {this.changeInterface.bind(this)}/>
+        <MenuBar changeInterface = {this.changeInterface.bind(this)} selected = {this.state.selectedInterface}/>
         {this.state.selectedInterface=="application"?<ApplicationPage />:<SupplierPerformance />}
       </div>
     )

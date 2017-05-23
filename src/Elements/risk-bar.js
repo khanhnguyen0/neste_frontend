@@ -2,16 +2,14 @@ import React from 'react';
 
 const Risk = (props) => {
     const {value} = props;
-    let a = [];
-    for (var i = 0; i < value-1; i++) {
-        a.push(
-            <div className="risk-bar" key = {i}></div>
-        )
-      }
+    // let a = [];
+    let width = value/5*80 + "%";
+    const color = ["#b64a4a","#bb7b4c","#b5bf51","#88bb50","#88bb50"]
     return (
         <div className = "risk">
-            <p>Risk :</p>
-            {a}
+            <p>Risk: </p>
+            <div className = "risk-bar" style = {{"width":width,"backgroundColor":color[5-value]}}>
+            </div>
         </div>
     )
 }

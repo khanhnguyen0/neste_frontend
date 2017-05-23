@@ -14,12 +14,17 @@ class Audit extends Component {
   render(){
     const {data} = this.props;
     return (
+      <div style = {{"marginRight":"20px","flex":1}}>
+      <div className = "menu">
+        <p>Audit</p>
+        <i className="fa fa-filter" aria-hidden="true"></i>
+      </div>
       <div className = "audit-application">
-        <p>Auditing application</p>
         {data.map((a,k)=>{
           return <AuditingApplicationCard {...a} key = {k} />
         })}
       </div>
+    </div>
     )
   }
 }

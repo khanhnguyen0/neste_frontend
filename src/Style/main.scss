@@ -4,6 +4,7 @@
 @import 'audit-application';
 @import 'approved-application';
 @import 'supplier-performance';
+@import 'color-bar';
 @font-face {
   font-family: 'myfontfamily';
   src: url(../assets/TT0857M_.TTF) format('truetype');
@@ -15,10 +16,11 @@
 }
 
 html,body {
-  margin:0px;
   display: flex;
   flex-direction: column;
   font-family: 'myfontfamily';
+  background-clip: border-box;
+  font-size: small;
 }
 
 [data-reactroot] {

@@ -85,7 +85,7 @@ class SupplierPerformance extends Component {
     if (this.state.supplierData.length == 0) return (<div className = "Loading"></div>)
     return (
       <div className = "supplier-interface">
-        <SupplierCategory selectCategory = {this.selectCategory.bind(this)}/>
+        <SupplierCategory selectCategory = {this.selectCategory.bind(this)} selectedCategory = {this.state.selectedCategory}/>
         <CurrentPerformance data = {this.state.selectedPerformance} theme={theme[this.state.selectedCategory]} />
         <CurrentRating data = {this.state.selectedPerformance} theme={theme[this.state.selectedCategory]} selectSupplier ={this.selectSupplier.bind(this)}/>
       </div>
