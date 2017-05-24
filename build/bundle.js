@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c4807730949716dfd959"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e9ac5147c848b87fd20c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -39533,9 +39533,9 @@ var _supplierList2 = _interopRequireDefault(_supplierList);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var radarConfig = {
-  width: 200,
-  height: 200,
-  padding: 0,
+  width: 300,
+  height: 300,
+  padding: 50,
   domainMax: 100,
   highlighted: null
 };

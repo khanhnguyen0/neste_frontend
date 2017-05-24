@@ -4,9 +4,9 @@ import _ from 'lodash';
 import SupplierList from './supplier-list';
 
 const radarConfig = {
-  width:200,
-  height:200,
-  padding:0,
+  width:300,
+  height:300,
+  padding:50,
   domainMax:100,
   highlighted:null
 }
