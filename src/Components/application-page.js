@@ -26,7 +26,14 @@ class ApplicationPage extends Component {
   }
 
   render(){
-    if (this.state.applicationData.length ==0) return null;
+    if (this.state.applicationData.length ==0) return (
+      <div className="sk-folding-cube">
+  <div className="sk-cube1 sk-cube"></div>
+  <div className="sk-cube2 sk-cube"></div>
+  <div className="sk-cube4 sk-cube"></div>
+  <div className="sk-cube3 sk-cube"></div>
+</div>
+    );
     const newApplication = this.state.applicationData.filter(a=>a.current_status == "new");
     const auditingApplication = this.state.applicationData.filter(a=>a.current_status == "auditing");
     const approvedApplication = this.state.applicationData.filter(a=>a.current_status == "approved");
