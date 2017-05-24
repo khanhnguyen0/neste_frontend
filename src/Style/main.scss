@@ -23,12 +23,13 @@ html,body {
   font-family: 'myfontfamily';
   background-clip: border-box;
   font-size: small;
+  background:radial-gradient(white, #d6d6d6)
 }
 
 [data-reactroot] {
   width:100% !important;
   height:100% !important;
-  background-image: url(../assets/background-04.png);
+  // background-image: url(../assets/background-04.png);
   background-size: cover;
   background-position: center;
 }
