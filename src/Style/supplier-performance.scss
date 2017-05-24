@@ -44,7 +44,6 @@
     .performance-row {
         display: flex;
         flex-direction: row;
-
         p {
             width: 150px;
             text-align: right;
@@ -90,6 +89,9 @@
     border-left-style: solid;
     justify-content: center;
     align-items: center;
+    background:linear-gradient(90deg, white, #e6e6e6);
+    padding: 5px 0 5px 0;
+    cursor: pointer;
     div {
         margin: 0 10px;
     }
@@ -99,7 +101,7 @@
         text-align: center;
         border-style: solid;
         border-width: thin;
-        border-radius: 40%;
+        border-radius: 15px;
     }
 }
 
