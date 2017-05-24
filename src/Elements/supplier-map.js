@@ -4,7 +4,7 @@ import Map,{Marker} from 'google-maps-react'
 const containerStyle = {
   width:"40%",
   height:"40%",
-  "margin-left":"30px"
+  "marginLeft":"30px"
 }
 
 const SupplierMap = (props) =>{

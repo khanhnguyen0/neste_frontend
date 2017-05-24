@@ -86,7 +86,10 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
-
+    border-left-width: 7px;
+    border-left-style: solid;
+    justify-content: center;
+    align-items: center;
     div {
         margin: 0 10px;
     }
@@ -101,6 +104,6 @@
 }
 
 .expired {
-    line-height: 50px;
     color: crimson;
+    font-size: 1.5em;
 }

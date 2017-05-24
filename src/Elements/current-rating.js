@@ -12,7 +12,7 @@ const radarConfig = {
 }
 
 const CurrentRating = (props)=>{
-  const {data, selectSupplier} = props;
+  const {data, selectSupplier,theme} = props;
   const sup_rating = Math.floor(_.sumBy(data,'sup_rating')/data.length);
   const fin_rating = Math.floor(_.sumBy(data,'fin_rating')/data.length);
   const bio_rating = Math.floor(_.sumBy(data,'bio_rating')/data.length);
@@ -46,7 +46,7 @@ const CurrentRating = (props)=>{
 
   return(
     <div className = "current-rating">
-      <SupplierList list = {data} selectSupplier = {selectSupplier}/>
+      <SupplierList list = {data} selectSupplier = {selectSupplier} theme = {theme}/>
       <div className = "radar">
         <h3>Rating summary</h3>
         <Radar {...radarConfig} data={ratingData} />
